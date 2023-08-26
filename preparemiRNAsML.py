@@ -36,11 +36,12 @@ def preparemiRNAsML(transcripts_file,\
                 psRNAprocessed.write(line)
     upstream_read = int(upstream)
     downstream_read = int(downstream)
+    expectation = int(expectation_value)                                     
     fasta_keys = list(map(lambda n: n.split()[0].replace(">", ""),list(transcripts_read.keys())))
     fasta_sequences = list(transcripts_read.values())
     fasta_keys_sequences = [(i,j) for i,j in zip(fasta_keys,fasta_sequences)]
     miRNAs = pd.read_csv(psRNATargetfile + "processed.txt", sep= "\t")
-    read_miRNAs = miRNAs[miRNAs["Expectation"] > 0.0]
+    read_miRNAs = miRNAs[miRNAs["Expectation"] > expectation]
     read_miRNAs_target = list(read_miRNAs["Target_Acc."])
     read_miRNAs_accession = list(read_miRNAs["miRNA_Acc."])
     read_miRNAs_start = list(read_miRNAs["Target_start"])
