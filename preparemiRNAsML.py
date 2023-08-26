@@ -53,4 +53,4 @@ def preparemiRNAsML(transcripts_file,\
                                         i in range(len(storing_miRNA_start_stop_coordinates)) for \
                                                  j in range(len(storing_matches)) if intermediate[j][0] ==  \
                                                                                  storing_miRNA_start_stop_coordinates[i][0]]
-    return storing_miRNA_start_stop_coordinates
+    return spliced_transcripts
