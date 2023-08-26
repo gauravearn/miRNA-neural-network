@@ -4,7 +4,8 @@ A function to prepare the neural network sequence for the miRNA predictions. It 
 ```
 preparemiRNAsML("/Users/gauravsablok/Desktop/release/Athaliana_167_TAIR10.transcript.fa", \
                                                 "/Users/gauravsablok/Desktop/release/test.txt", \
-                                                                 expectation_value="0.0",upstream = 100, downstream=100)
+                                                                 expectation_value="0.0", \
+                                                                  upstream = 100, downstream=100)
 ````
 
 Gaurav Sablok \
