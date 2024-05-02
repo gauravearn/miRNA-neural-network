@@ -8,7 +8,7 @@ preparemiRNAsML("/Users/gauravsablok/Desktop/release/Athaliana_167_TAIR10.transc
                                                                   upstream = 100, downstream=100)
 ````
 
-Gaurav Sablok \
+Gaurav \
 Academic Staff Member \
 Bioinformatics \
 Institute for Biochemistry and Biology \
